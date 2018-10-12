@@ -248,6 +248,33 @@ header nav a {
   text-decoration: none;
   color: black;
 }
+@media (min-width: 1000px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px dashed lightgrey;
+    padding: 2.2rem 8rem;
+    margin-top: 0;
+  }
+  header nav {
+    border: none;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    margin-right: 3.5rem;
+    padding: 0;
+  }
+  header nav a {
+    margin: 0 1.6rem;
+    font-weight: bold;
+  }
+  header .logo {
+    margin-left: 2.4rem;
+    font-size: 4rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -331,4 +358,24 @@ header nav a {
   font-size: 1.8rem;
   padding: 1.3rem;
   border-radius: 1.5rem;
+}
+@media (min-width: 1000px) {
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .content-section .img-content {
+    width: 48%;
+  }
+  .content-section .img-content img {
+    width: 48%;
+    border-radius: 10px;
+  }
 }

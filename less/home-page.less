@@ -85,3 +85,26 @@
     }
   }
 } // home
+
+@media (min-width: 1000px) {
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+
+    .img-content {
+      width: 48%;
+      img {
+        width: 48%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
